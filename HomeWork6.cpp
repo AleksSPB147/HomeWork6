@@ -1,23 +1,64 @@
 ﻿#include <iostream>
-
-
-int task1();
-int task2();
-int task3();
+using namespace std;
 
 
 
+int task1(int array[], const int size)
+{
+	int min = array[0];
+	
+	
+	for (int i = 0; i < size; i++)
+	{
+		if (array[i] > min)
+		{
+			
+	
+			array[i] = min;
+		}
+
+		
+	}
+
+	return   min;
+	
+}
 
 
 int main()
 {
-	task1();
-	task2();
-	task3();
+	
+	
+	setlocale(LC_ALL, "RU");
+	const int SIZE = 4;
+	int array[SIZE];
+	int min = 0;
+	cout <<"Введите число: ";
+	cout << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		cout << i + 1 << "\\" << SIZE << " : ";
+		cin >> array[i];
+	}
+	
+	
+	
+	/*for (int i = 0; i < SIZE; i++)
+	{
+		cout << min;
+	}*/
 
+	//cout << min;
+	
+	//cout << task1;
+
+	
 
 
 }
+
+
+
 
 
 
@@ -28,11 +69,6 @@ int main()
 // Программа должна вывести значение наибольшего элемента.
 // Поиск наибольшего элемента оформите в виде функции, которая возвращает значение наибольшего элемента, а в качестве параметра получает массив
 
-int task1()
-{
-
-
-}
 
 
 
