@@ -40,8 +40,16 @@ int main()
 		cout << i + 1 << "\\" << SIZE << " : ";
 		cin >> array[i];
 	}
-	
-	
+	int task1(int array[], const int size);
+
+	////cout << array[1];
+	for (int i = 0; i < SIZE; i++)
+	{
+		cout << array[i];
+		cout << " ";
+	}
+	cout << endl;
+	cout << task1;
 	
 	/*for (int i = 0; i < SIZE; i++)
 	{
